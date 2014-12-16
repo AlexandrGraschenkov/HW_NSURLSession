@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Fruit : NSObject
 
@@ -15,5 +16,7 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSURL *thumbURL;
 @property (nonatomic, strong) NSURL *imageURL;
+
+@property (nonatomic, strong) UIImage *cachedImage;
 
 @end
