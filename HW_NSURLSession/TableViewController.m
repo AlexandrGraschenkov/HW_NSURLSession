@@ -23,8 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.refreshControl = [[UIRefreshControl alloc] init];
-    self.refreshControl.backgroundColor = [UIColor lightGrayColor];
-    self.refreshControl.tintColor = [UIColor whiteColor];
+    self.refreshControl.backgroundColor = [UIColor whiteColor];
+    self.refreshControl.tintColor = [UIColor lightGrayColor];
+    
     [self.refreshControl addTarget:self
                             action:@selector(loadDataFromNet)
                   forControlEvents:UIControlEventValueChanged];
@@ -52,13 +53,14 @@
             fruitArray = appArray;
             if (fruitArray.count > 0) self.tableView.backgroundView = nil;
             dispatch_async(dispatch_get_main_queue(), ^{
+                self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
                 [self.tableView reloadData];
                 if (self.refreshControl) {
                     
                     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
                     [formatter setDateFormat:@"MMM d, h:mm a"];
                     NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
-                    NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
+                    NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor lightGrayColor]
                                                                                 forKey:NSForegroundColorAttributeName];
                     NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
                     self.refreshControl.attributedTitle = attributedTitle;
@@ -112,6 +114,7 @@
     [cell.imgView addSubview: indicator];
     
     if (fruit.cachedImage) {
+        if ([indicator isAnimating]) [indicator stopAnimating];
         cell.imgView.image = fruit.cachedImage;
     } else {
         [indicator startAnimating];
