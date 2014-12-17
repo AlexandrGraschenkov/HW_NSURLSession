@@ -136,6 +136,7 @@
     DetailFruitViewController *detail = [segue destinationViewController];
     Fruit *fruit = fruitArray[indexPath.row];
     detail.detailImageURL = fruit.imageURL;
+    detail.fruit = fruit;
 }
 
 @end

@@ -18,5 +18,6 @@
 @property (nonatomic, strong) NSURL *imageURL;
 
 @property (nonatomic, strong) UIImage *cachedImage;
+@property (nonatomic, strong) UIImage *cachedLargeImage;
 
 @end

@@ -11,6 +11,7 @@
 @interface DetailFruitViewController () {
     NSURLSession *session;
     UIActivityIndicatorView *indicator;
+    NSMutableDictionary *dictImg;
 }
 
 @property (nonatomic, weak) IBOutlet UIImageView *detailImage;
@@ -21,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    dictImg  = [[NSMutableDictionary alloc] init];
     indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     indicator.center = self.view.center;
@@ -30,16 +32,22 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [indicator startAnimating];
-    [indicator setHidesWhenStopped:YES];
-    [self.view addSubview:indicator];
-    [[session dataTaskWithURL:self.detailImageURL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        UIImage *img = [UIImage imageWithData:data];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [indicator stopAnimating];
-            self.detailImage.image = img;
-        });
-    }] resume];
+    
+    if (self.fruit.cachedLargeImage) {
+        self.detailImage.image = self.fruit.cachedLargeImage;
+    } else {
+        [indicator startAnimating];
+        [indicator setHidesWhenStopped:YES];
+        [self.view addSubview:indicator];
+        [[session dataTaskWithURL:self.detailImageURL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            UIImage *img = [UIImage imageWithData:data];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [indicator stopAnimating];
+                self.fruit.cachedLargeImage = img;
+                self.detailImage.image = img;
+            });
+        }] resume];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

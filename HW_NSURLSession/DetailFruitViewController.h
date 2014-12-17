@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Fruit.h"
 
 @interface DetailFruitViewController : UIViewController
 
 @property (nonatomic, strong) NSURL *detailImageURL;
+@property (nonatomic, strong) Fruit *fruit;
 
 @end
