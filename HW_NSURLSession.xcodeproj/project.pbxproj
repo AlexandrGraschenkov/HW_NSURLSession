@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		A815CAD31A3CC70C00E57E04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A815CAD21A3CC70C00E57E04 /* main.m */; };
 		A815CAD61A3CC70C00E57E04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A815CAD51A3CC70C00E57E04 /* AppDelegate.m */; };
-		A815CAD91A3CC70C00E57E04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A815CAD81A3CC70C00E57E04 /* ViewController.m */; };
 		A815CADC1A3CC70C00E57E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A815CADA1A3CC70C00E57E04 /* Main.storyboard */; };
 		A815CADE1A3CC70C00E57E04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A815CADD1A3CC70C00E57E04 /* Images.xcassets */; };
 		A815CAE11A3CC70C00E57E04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A815CADF1A3CC70C00E57E04 /* LaunchScreen.xib */; };
 		A815CAED1A3CC70C00E57E04 /* HW_NSURLSessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A815CAEC1A3CC70C00E57E04 /* HW_NSURLSessionTests.m */; };
+		B21848CF1A3F140000ED832E /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = B21848CE1A3F140000ED832E /* Fruit.m */; };
+		B21848D21A3F181E00ED832E /* FruitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B21848D11A3F181E00ED832E /* FruitCell.m */; };
+		B21848D51A3F373E00ED832E /* DetailFruitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21848D41A3F373E00ED832E /* DetailFruitViewController.m */; };
+		B27DC1821A403732003C8307 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27DC1811A403732003C8307 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,20 @@
 		A815CAD21A3CC70C00E57E04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A815CAD41A3CC70C00E57E04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A815CAD51A3CC70C00E57E04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A815CAD71A3CC70C00E57E04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A815CAD81A3CC70C00E57E04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A815CADB1A3CC70C00E57E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A815CADD1A3CC70C00E57E04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A815CAE01A3CC70C00E57E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A815CAE61A3CC70C00E57E04 /* HW_NSURLSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW_NSURLSessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A815CAEB1A3CC70C00E57E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A815CAEC1A3CC70C00E57E04 /* HW_NSURLSessionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_NSURLSessionTests.m; sourceTree = "<group>"; };
+		B21848CD1A3F140000ED832E /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		B21848CE1A3F140000ED832E /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		B21848D01A3F181E00ED832E /* FruitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitCell.h; sourceTree = "<group>"; };
+		B21848D11A3F181E00ED832E /* FruitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitCell.m; sourceTree = "<group>"; };
+		B21848D31A3F373E00ED832E /* DetailFruitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailFruitViewController.h; sourceTree = "<group>"; };
+		B21848D41A3F373E00ED832E /* DetailFruitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailFruitViewController.m; sourceTree = "<group>"; };
+		B27DC1801A403732003C8307 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B27DC1811A403732003C8307 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,14 @@
 			children = (
 				A815CAD41A3CC70C00E57E04 /* AppDelegate.h */,
 				A815CAD51A3CC70C00E57E04 /* AppDelegate.m */,
-				A815CAD71A3CC70C00E57E04 /* ViewController.h */,
-				A815CAD81A3CC70C00E57E04 /* ViewController.m */,
+				B27DC1801A403732003C8307 /* TableViewController.h */,
+				B27DC1811A403732003C8307 /* TableViewController.m */,
+				B21848D31A3F373E00ED832E /* DetailFruitViewController.h */,
+				B21848D41A3F373E00ED832E /* DetailFruitViewController.m */,
+				B21848D01A3F181E00ED832E /* FruitCell.h */,
+				B21848D11A3F181E00ED832E /* FruitCell.m */,
+				B21848CD1A3F140000ED832E /* Fruit.h */,
+				B21848CE1A3F140000ED832E /* Fruit.m */,
 				A815CADA1A3CC70C00E57E04 /* Main.storyboard */,
 				A815CADD1A3CC70C00E57E04 /* Images.xcassets */,
 				A815CADF1A3CC70C00E57E04 /* LaunchScreen.xib */,
@@ -219,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A815CAD91A3CC70C00E57E04 /* ViewController.m in Sources */,
+				B21848CF1A3F140000ED832E /* Fruit.m in Sources */,
+				B21848D51A3F373E00ED832E /* DetailFruitViewController.m in Sources */,
+				B21848D21A3F181E00ED832E /* FruitCell.m in Sources */,
 				A815CAD61A3CC70C00E57E04 /* AppDelegate.m in Sources */,
+				B27DC1821A403732003C8307 /* TableViewController.m in Sources */,
 				A815CAD31A3CC70C00E57E04 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +430,7 @@
 				A815CAF21A3CC70C00E57E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A815CAF31A3CC70C00E57E04 /* Build configuration list for PBXNativeTarget "HW_NSURLSessionTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +439,7 @@
 				A815CAF51A3CC70C00E57E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
