@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5055D621A4DB57000FBD931 /* FruitsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5055D5F1A4DB57000FBD931 /* FruitsTableViewController.m */; };
+		A5055D631A4DB57000FBD931 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5055D611A4DB57000FBD931 /* TableViewCell.m */; };
 		A815CAD31A3CC70C00E57E04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A815CAD21A3CC70C00E57E04 /* main.m */; };
 		A815CAD61A3CC70C00E57E04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A815CAD51A3CC70C00E57E04 /* AppDelegate.m */; };
 		A815CAD91A3CC70C00E57E04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A815CAD81A3CC70C00E57E04 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5055D5E1A4DB57000FBD931 /* FruitsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitsTableViewController.h; sourceTree = "<group>"; };
+		A5055D5F1A4DB57000FBD931 /* FruitsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitsTableViewController.m; sourceTree = "<group>"; };
+		A5055D601A4DB57000FBD931 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		A5055D611A4DB57000FBD931 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		A815CACD1A3CC70C00E57E04 /* HW_NSURLSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_NSURLSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A815CAD11A3CC70C00E57E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A815CAD21A3CC70C00E57E04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +87,10 @@
 		A815CACF1A3CC70C00E57E04 /* HW_NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
+				A5055D5E1A4DB57000FBD931 /* FruitsTableViewController.h */,
+				A5055D5F1A4DB57000FBD931 /* FruitsTableViewController.m */,
+				A5055D601A4DB57000FBD931 /* TableViewCell.h */,
+				A5055D611A4DB57000FBD931 /* TableViewCell.m */,
 				A815CAD41A3CC70C00E57E04 /* AppDelegate.h */,
 				A815CAD51A3CC70C00E57E04 /* AppDelegate.m */,
 				A815CAD71A3CC70C00E57E04 /* ViewController.h */,
@@ -221,6 +231,8 @@
 			files = (
 				A815CAD91A3CC70C00E57E04 /* ViewController.m in Sources */,
 				A815CAD61A3CC70C00E57E04 /* AppDelegate.m in Sources */,
+				A5055D621A4DB57000FBD931 /* FruitsTableViewController.m in Sources */,
+				A5055D631A4DB57000FBD931 /* TableViewCell.m in Sources */,
 				A815CAD31A3CC70C00E57E04 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +424,7 @@
 				A815CAF21A3CC70C00E57E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A815CAF31A3CC70C00E57E04 /* Build configuration list for PBXNativeTarget "HW_NSURLSessionTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				A815CAF51A3CC70C00E57E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
